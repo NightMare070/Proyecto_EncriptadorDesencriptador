@@ -1,0 +1,136 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: #a1c8e9;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+
+header{
+    background-color: #172234;
+    padding: 10px 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+h1 img{
+    width: 100px;
+}
+
+.contenedor {
+    display: flex;
+}
+
+form{
+    width: 80%;
+    padding: 20px;
+}
+
+textarea{
+    border-radius: 10px;
+    background-color: #c4dff5;
+    border-style: none;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 95%;
+}
+
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 12px 0;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.enviar{
+    width: 30%;
+    margin: auto 20px;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #385480;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: #273b5a;
+    transform: scale(1.1);
+}
+
+.columna{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.columna h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.columna p{
+    font-size: auto;
+}
+
+aside{
+    width: 20%;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.copiar{
+    width: 100%;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #385480;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.copiar:hover{
+    background-color: #273b5a;
+    transform: scale(1.1);
+}
+
+footer{
+    text-align: center;
+    background: url(../img/patron.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 30px;
+    margin: 20px;
+}
