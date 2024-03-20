@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,20 +23,20 @@
         <h1>Encriptador/Desencriptador</h1>
 
         <section class="contenedor">
-            <form action="">
+            <div class="formulario">
                 <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba aquí su mensaje" class="input-padron" required></textarea>
                 <legend>&#9432;  Solo se aceptan letras minúsculas</legend>
                 <legend>&#9432;  No se aceptan acentos ni caracteres especiales</legend>
 
                 <div class="botones">
-                    <input type="submit" value="Encriptar" class="enviar">
-                    <input type="submit" value="Desencriptar" class="enviar">
+                    <button onclick="obtenerTexto('textarea', 'Encriptar')" class="enviar">Encriptar</button>
+                    <button onclick="obtenerTexto('textarea', 'Desencriptar')" class="enviar">Desencriptar</button>
                 </div>
-            </form>
+            </div>
             <aside class="columna">
                 <h2>Tu mensaje aquí</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos explicabo, eveniet, molestias enim illum reiciendis autem, dolor sapiente ea exercitationem quod eligendi totam nemo nihil ipsum necessitatibus mollitia quas sit.</p>
-                <input type="submit" value="Copiar" class="copiar">
+                <p id="mensajeFin"></p>
+                <button onclick="copiarTexto('p');" class="copiar">Copiar</button>
             </aside>
         </section>
     </main>
@@ -43,5 +44,7 @@
     <footer>
         <p class="copyright">&copy; Copyright NightMare070 - 2024</p>
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
